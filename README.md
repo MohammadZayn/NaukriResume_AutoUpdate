@@ -39,7 +39,7 @@ A Python automation script that logs into [Naukri.com](https://www.naukri.com/),
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/naukri-auto-upload.git
+git clone https://github.com/MohammadZayn/naukri_auto_upload.git
 ```
 
 ### 2. Install Dependencies
