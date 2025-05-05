@@ -13,9 +13,9 @@ def test_Naukri_update():
     try:
         driver.get('https://www.naukri.com/nlogin/login')
         username_field = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'usernameField')))
-        username_field.send_keys('mohammadshaik776@gmail.com')
+        username_field.send_keys('xxxxxxxxxxxxxxx@gmail.com')
         password_field = driver.find_element(By.ID, 'passwordField')
-        password_field.send_keys("Mohammad47@")
+        password_field.send_keys("xxxxxxxxxx")
         login_button = driver.find_element(By.XPATH, '//button[text()="Login"]')
         login_button.click()
         time.sleep(3)
@@ -25,7 +25,7 @@ def test_Naukri_update():
                                                      )
         time.sleep(3)
         driver.execute_script("arguments[0].scrollIntoView(true);", file_input)
-        resume_path = os.path.abspath(r"C:\Users\moham\OneDrive\Documents\Mohammad_Automation_Engineer.pdf")
+        resume_path = os.path.abspath(r"Resume Path of your file")
         file_input.send_keys(resume_path)
         WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),"
                                                                                   "'Resume uploaded successfully')]")))
